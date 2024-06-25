@@ -1,0 +1,20 @@
+.privacy_notice {
+
+ 
+  h1 {
+      text-align: center; 
+      font-size: 2rem; 
+      
+  }
+
+  p {
+      
+      margin: auto;
+      max-width:700px;
+      color: black; /* Set font color to black */
+
+      &:last-child { /* Select the last paragraph */
+        margin-bottom: 35px; /* Add space at the bottom */
+    }
+  }
+}

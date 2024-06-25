@@ -1,0 +1,127 @@
+// Custom Contact
+.contact {
+    background-color: $veryLightGray;
+
+    .contact-grid {
+        
+        grid-template-columns: 1fr;
+        @include breakpoint-up(medium){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            grid-template-areas: 'details partners'
+            'form accredidations'
+            'map map';
+
+
+        }
+
+        @include breakpoint-up(large){
+      
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 0.1fr);
+        
+        grid-template-areas:
+        'details partners accredidations'
+        'form map map';
+        gap: 1.875rem;
+        justify-items: start;
+        }
+    }
+
+    &__text{  
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+       
+    &__details {
+        grid-area: details;
+        text-align: center;
+        line-height: 2rem;
+
+        @include breakpoint-up(medium){
+            line-height: 2rem;
+        }
+        @include breakpoint-up(large){
+   
+            line-height: 2.6rem;
+            
+            width: max-content;
+            margin-bottom: 1rem;
+            height: 10rem;
+            
+        }
+
+
+        .unstyled-list{
+            list-style: none;
+            color: $darkBlue;
+        }
+    }
+
+    &__form {
+        grid-area: form;
+        text-align: center;
+        font-size: 0.998rem;
+        margin-top: 1rem;
+
+        @include breakpoint-up(medium){
+            font-size: 0.998rem;
+            
+        }
+        @include breakpoint-up(large){
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+            padding-left: 8.8rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    &__partners{
+        grid-area: partners; 
+        text-align: center;
+        margin-bottom: 2rem;
+        @include breakpoint-up(medium){
+          margin-left: 5rem;
+        }
+        @include breakpoint-up(large){
+
+            height: 13.5rem;
+            width: 9.75rem;
+            padding-top: 1.6rem; 
+            margin-left: 4rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    &__accredidations{
+        grid-area: accredidations;
+        text-align: center;
+        margin-bottom: 2rem;
+        @include breakpoint-up(large){
+            justify-content: center;
+            height: 10.5rem;
+            width: 16.00rem;
+            // margin-left: 0.4rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            padding-top: 1.6rem; 
+        }
+        @include breakpoint-up(medium){
+            margin-left: 3rem;
+        }
+    }
+    
+    &__map {
+        
+        grid-area: map;
+    }
+}
+
+//     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+

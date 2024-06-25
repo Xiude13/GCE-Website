@@ -1,0 +1,96 @@
+.hero-image{
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background: url(/wp-content/themes/GCE_theme/images/chelsea-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+  border-radius: 0.3125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+ 
+}
+.wrapper h1{
+  color: white;
+    
+}
+.wrapper h1 span{
+  border: 10px solid;
+  padding: 6px 14px;
+  display: inline-block;
+    
+    
+}
+
+.des{
+  margin: 20px;
+  display: block;
+  color: white;
+}
+
+
+//Popup 
+.cookies-box {
+  position: absolute;
+  left: -100%;
+  bottom: 380px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  margin: 0 auto;
+  color: #112d32;
+  transition: all 1.3s ease;
+}
+.cookies-box.show {
+  left: 0; /* Bring the box into the viewport from the left side */
+}
+.cookies__title {
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  color: white;
+}
+.cookies__text {
+  font-size: 12px;
+}
+.cookies__title,
+.cookies__text {
+  margin-bottom: 15px;
+}
+.cookies__link {
+  margin-left: 10px;
+  display: inline-block;
+  color: #8fc1e3;
+}
+.cookies__btn {
+  font-size: 16px;
+  padding: 10px 25px;
+  background-color: #8fc1e3;
+  color: #112d32;
+  border-radius: 3px;
+  border: none;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.cookies__link:hover {
+  color: #31708e;
+}
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .cookies-box {
+    position: relative;
+    bottom: 0; /* Ensure it's always at the bottom for smaller screens */
+    padding: 10px; /* Reduce padding further for smaller screens */
+  }
+}
+

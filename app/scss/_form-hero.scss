@@ -1,0 +1,58 @@
+.fb_area {
+  color: $white;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.fbcontainer {
+  @include breakpoint-up(large){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 1rem;
+    grid-template-areas:
+    "info fbuttons"
+    "sseg-form-input sseg-form-input";
+  }
+}
+
+.info {
+  grid-area: info;
+  margin-left: 1.25rem;
+  align-self: center;
+  text-align: left;
+  @include breakpoint-down(medium) {
+    text-align: left;
+    max-width: 400px;
+  }
+}
+
+.fbuttons {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "fb1 fb2 fb3"
+    "fb4 fb5 fb6";
+  grid-area: fbuttons;
+}
+
+.fb1 { grid-area: fb1; }
+.fb2 { grid-area: fb2; }
+.fb3 { grid-area: fb3; }
+.fb4 { grid-area: fb4; }
+.fb5 { grid-area: fb5; }
+.fb6 { grid-area: fb6; }
+
+.sseg-form-input {
+  justify-self: center;
+  align-self: center;
+  text-align: left;
+  grid-area: sseg-form-input;
+  margin-top: 1rem;
+}

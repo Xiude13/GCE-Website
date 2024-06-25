@@ -1,0 +1,78 @@
+.reviews {
+ background-color: $veryLightGray;
+}
+.revbutton {
+  
+  
+}
+.revwrapper {
+    background-color: $veryLightGray;
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+  }
+
+  .testimonial-revcontainer {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding: 1.8em 1.2em;
+  }
+  .revwrapper button {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #ffffff;
+    position: absolute;
+    margin: auto;
+    top: 0rem;
+    bottom: 0rem;
+    border: none;
+    color: #ffffff;
+    border-radius: 50%;
+    border-width: 0 1rem 1rem 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  button#next {
+    right: -2rem;
+  }
+  button#prev {
+    left: -2rem;
+  }
+  .testimonial-revcontainer p {
+    color: #8c8c90;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+  }
+
+  .testimonial-revcontainer img {
+    display: block;
+    margin: 1.8em auto 1.25em auto;
+    border-radius: 50%;
+    width: 4.4em;
+  }
+
+  .testimonial-revcontainer h3 {
+    color: #2d3d67;
+    font-size: 1em;
+    text-align: center;
+  }
+  .testimonial-revcontainer h6 {
+    color: #bcc4da;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    text-align: center;
+  }
+  @media screen and (max-width: 650px) {
+    .revwrapper {
+      font-size: 14px;
+    }
+  }
